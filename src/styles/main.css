@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: #424242;
 }
@@ -29,7 +29,8 @@ body {
 }
 
 .header__inner {
-  width: 800px;
+  /* width: 800px; */
+  width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -48,7 +49,8 @@ body {
  */
 
 .nav {
-  width: 800px;
+  /* width: 800px; */
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,20 +65,23 @@ body {
 .nav__item {
   box-sizing: border-box;
   display: inline-block;
-  width: 24%;
+  width: 13%;
   text-align: center;
   line-height: 24px;
-  padding: 24px;
+  /* padding: 24px; */
   text-transform: uppercase;
 }
 
 .nav a {
   text-decoration: none;
   color: #616161;
+
+  padding: 1.3em;
+  display: inline-block;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #000;
 }
 
@@ -90,7 +95,7 @@ body {
   min-height: 380px;
   width: 100%;
   text-align: center;
-  background-image: url('../public/images/hero.jpg');
+  background-image: url("../public/images/hero.jpg");
   background-position: center;
   background-color: green;
 }
@@ -118,8 +123,10 @@ body {
  */
 
 main {
-  width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto;
+
+  width: 100%;
 }
 
 /*
@@ -134,13 +141,15 @@ main {
  * headline
  */
 
-.headline {
+/* .headline {
   overflow: auto;
-}
+} */
 
 .headline__figure {
-  width: 450px;
-  float: left;
+  /* width: 450px;
+  float: left; */
+
+  width: 100%;
 }
 
 .headline__figure img {
@@ -156,9 +165,11 @@ main {
 }
 
 .headline__content {
-  width: 600px;
-  float: left;
+  /* width: 600px;
+  float: left; */
   padding: 16px 32px;
+
+  width: 100%;
 }
 
 .headline__title {
@@ -172,7 +183,7 @@ main {
 }
 
 .headline__button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   margin-top: 24px;
   cursor: pointer;
@@ -193,9 +204,11 @@ main {
  */
 
 .latest {
-  width: 1000px;
+  /* width: 1000px; */
   margin: 60px auto;
   text-align: center;
+
+  width: 100%;
 }
 
 .latest__label {
@@ -204,7 +217,7 @@ main {
 }
 
 .latest__label::after {
-  content: '';
+  content: "";
   margin-top: 16px;
   display: block;
   border-bottom: 1px solid #eeeeee;
@@ -217,7 +230,7 @@ main {
 .posts {
   margin: 32px auto auto;
   text-align: left;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 /*
@@ -225,12 +238,15 @@ main {
  */
 
 .post-item {
-  float: left;
-  margin: 16px;
+  /* float: left; */
+  /* margin: 16px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 300px;
+  /* width: 300px; */
   border-radius: 5px;
   overflow: hidden;
+
+  width: 100%;
+  margin: 16px auto;
 }
 
 .post-item__content {
@@ -299,4 +315,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: #fff;
+
+  display: inline-block;
+  padding: 1.3em;
 }
